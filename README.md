@@ -1,34 +1,48 @@
 # AI-Anomalies
 AI Network Anomaly Detection Lab
-Overview:
-This project demonstrates a machine learning approach to detecting anomalous network traffic using packet captures generated from simulated attacks in a controlled virtual lab environment.
+
+Overview
+This project demonstrates a machine learning approach to detecting anomalous network traffic using packet capture data generated from simulated attacks in a virtualized lab environment.
 
 Lab Environment
-Kali Linux (attacker)
-Windows VM (traffic capture)
-Ubuntu host (analysis)
-VMware virtual network
+Attacker Machine:
+Kali Linux
 
-Simulated Traffic
+Target Machine:
+Windows VM
+
+Analysis Environment:
+Ubuntu
+Python
+Jupyter Notebook
+
+Simulated Attacks
 The following traffic types were generated:
-Normal ICMP traffic (ping)
-TCP SYN port scanning using Nmap
-SYN flood attack using hping3
-
-Traffic Capture
-Network traffic was captured using Wireshark on the Windows VM and exported as CSV files.
+ICMP traffic (baseline normal activity)
+TCP SYN port scan using Nmap
+SYN flood traffic using hping3
+Traffic was captured using Wireshark and exported as CSV files for analysis.
 
 Machine Learning Model
-The anomaly detection model uses:
-Isolation Forest
+An anomaly detection model was implemented using:
+Isolation Forest (scikit-learn)
 
-Features extracted from packet data include:
+Features extracted from network packets include:
 packet time
 packet length
-protocol type
-source/destination information
+protocol
+source/destination IP
 
 Results
+The model was able to identify abnormal traffic patterns associated with simulated attacks compared to baseline network behavior.
 
-The model was able to detect abnormal traffic patterns associated with simulated denial-of-service traffic and scanning behavior.
+Tools Used
+Kali Linux
+Wireshark
+Python
+Pandas
+Scikit-learn
+Jupyter Notebook
+
+
 <img width="1753" height="719" alt="Screenshot (272)" src="https://github.com/user-attachments/assets/8d5ed134-190d-45db-9207-16730f85899e" />
