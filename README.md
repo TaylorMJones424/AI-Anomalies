@@ -45,4 +45,5 @@ Scikit-learn
 Jupyter Notebook
 
 
-<img width="1753" height="719" alt="Screenshot (272)" src="https://github.com/user-attachments/assets/8d5ed134-190d-45db-9207-16730f85899e" />
+<img width="1245" height="730" alt="Anomaly Detection" src="https://github.com/user-attachments/assets/de1cabbe-e0ab-46d8-982c-5a1364088bc9" />
+
